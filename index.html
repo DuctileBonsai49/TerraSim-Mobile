@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TerraSim Demo</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>TerraSim Demo</h1>
+  <button id="btnToggleLang">Switch to English</button>
+</header>
+<section id="gameContainer">
+  <canvas id="gameCanvas" width="800" height="450"></canvas>
+  <div id="tools">
+    <button data-tool="meteor">Meteor</button>
+    <button data-tool="explosion">Explosion</button>
+    <button data-tool="fire">Fire</button>
+    <button data-tool="placeTree">Place Tree</button>
+    <button data-tool="placeHouse">Place House</button>
+  </div>
+  <div id="scoreboard">
+    <h2>Score: <span id="score">0</span></h2>
+  </div>
+  <div id="storage">
+    <button id="exportAHS">Export .ahs</button>
+    <input type="file" id="importAHS" accept=".ahs" />
+  </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
